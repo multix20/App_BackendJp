@@ -1,6 +1,7 @@
 {
   "name": "cursos_app_backend",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Backend para la gestión de cursos en línea",
   "main": "index.js",
   "type": "module",
@@ -12,6 +13,17 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+=======
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "eslintConfig":{
+    "extends": [
+    "./node_modules/standard/eslintrc.json"
+  ]
+},
+  "scripts": {
+>>>>>>> 2a19c46 (Creación del main)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -22,6 +34,7 @@
     "standard": "^17.1.2"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -30,5 +43,11 @@
     "morgan": "^1.10.0",
     "pg": "^8.13.3",
     "supertest": "^6.3.3"
+=======
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3"
+>>>>>>> 2a19c46 (Creación del main)
   }
 }
