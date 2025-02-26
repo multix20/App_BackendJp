@@ -1,6 +1,6 @@
 // Controlador de usuarios
 
-import * as sql from '../models/usuarios.model.js'
+import * as sql from '../models/User.js'
 import jwt from 'jsonwebtoken'
 
 export const createUser = async (req, res) => {
