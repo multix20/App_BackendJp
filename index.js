@@ -1,10 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-dotenv.config();
-
-// Importa tus rutas, por ejemplo:
 import authRoutes from './src/server/routers/authRoutes.js';
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 
-// Rutas
+// 🔹 Registrar rutas
 app.use('/api/auth', authRoutes);
 
 app.listen(PORT, () => {
