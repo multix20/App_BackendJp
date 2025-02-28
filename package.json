@@ -1,30 +1,23 @@
 {
-  "name": "cursos_app_backend",
+  "name": "cursos-app-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend para la gestión de cursos en línea",
   "main": "index.js",
   "type": "module",
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/standard/eslintrc.json"
-    ]
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.1.9",
-    "standard": "^17.1.2"
-  },
+"scripts": {
+  "test": "set NODE_ENV=test && node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
+}
+,
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.13.3"
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "bcrypt": "^5.1.0",
+    "pg": "^8.13.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "jest": "^29.6.3",
+    "supertest": "^6.3.3"
   }
 }
